@@ -1,15 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "master-addon",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Master Addon",
+  "description": "An Master addon for Meteor Client.",
   "authors": [
-    "seasnail"
+    "JirkaMaster"
   ],
-  "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
-  },
   "icon": "assets/template/icon.png",
   "environment": "client",
   "entrypoints": {
@@ -21,11 +18,11 @@
     "addon-template.mixins.json"
   ],
   "custom": {
-    "meteor-client:color": "225,25,25"
+    "meteor-client:color": "0,255,255"
   },
   "depends": {
     "java": ">=21",
-    "minecraft": ["${mc_version}", "1.21.9"],
+    "minecraft": ["${mc_version}"],
     "meteor-client": "*"
   }
 }
