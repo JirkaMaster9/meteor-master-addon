@@ -68,7 +68,7 @@ public class AddonTemplate extends MeteorAddon {
             .get().getMetadata()
             .getCustomValue("github:sha")
             .getAsString();
-        LOG.info("Master addon version: {}", commit);
+//        LOG.info("Master addon version: {}", commit);
         return commit.isEmpty() ? null : commit.trim();
     }
 }
