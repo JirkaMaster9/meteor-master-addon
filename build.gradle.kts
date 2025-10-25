@@ -31,13 +31,15 @@ dependencies {
 
 tasks {
     processResources {
+        val ghHash = System.getenv("GITHUB_SHA") ?: "master"
+
         val propertyMap = mapOf(
             "version" to project.version,
             "mc_version" to project.property("minecraft_version"),
+            "gh_hash" to ghHash,
         )
 
         inputs.properties(propertyMap)
-
         filteringCharset = "UTF-8"
 
         filesMatching("fabric.mod.json") {
