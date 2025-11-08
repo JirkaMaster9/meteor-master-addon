@@ -3,7 +3,8 @@
   "package": "com.example.addon.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "ExampleMixin"
+    "ExampleMixin",
+    "FisshingBobberEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
