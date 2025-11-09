@@ -48,7 +48,7 @@ public class AddonTemplate extends MeteorAddon {
 
     @Override
     public String getPackage() {
-        return "JirkaMaster9.meteor-master-addon";
+        return "com.example.addon";
     }
     @Override
     public String getWebsite() {
