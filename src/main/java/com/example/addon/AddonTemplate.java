@@ -25,6 +25,7 @@ public class AddonTemplate extends MeteorAddon {
         LOG.info("Initializing Meteor Addon Template");
 
         // Modules
+        Modules.get().add(new Bomber());
         Modules.get().add(new AutoFishMinus());
         Modules.get().add(new FlyMinus());
         Modules.get().add(new ModuleExample());
