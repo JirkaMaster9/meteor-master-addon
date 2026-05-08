@@ -1,6 +1,7 @@
 package com.example.addon;
 
 import com.example.addon.commands.CommandExample;
+import com.example.addon.hud.HorseInfo;
 import com.example.addon.hud.HudExample;
 import com.example.addon.modules.*;
 import com.mojang.logging.LogUtils;
@@ -38,8 +39,9 @@ public class AddonTemplate extends MeteorAddon {
         // Commands
         Commands.add(new CommandExample());
 
-        // HUD
+// HUD
         Hud.get().register(HudExample.INFO);
+        Hud.get().register(HorseInfo.INFO);
     }
 
     @Override
